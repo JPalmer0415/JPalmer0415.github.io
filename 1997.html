@@ -1,0 +1,108 @@
+<!--TODO: Add text on left navigation pane, in news section, and in footer-->
+<!--TODO: Write and add link to 1997 Explanation-->
+<!--TODO: Add link to index.html in footer-->
+<!--TODO: Make icons and banner-->
+<!DOCTYPE html>
+<html>
+
+<title>Nonexistent Gambits</title>
+
+<!--CSS exists now-->
+<style>
+    header {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table, td{
+        border: 1px solid black;
+        /*border-collapse prevents double borders*/
+        border-collapse: collapse;
+    }
+
+    .boxModel{
+        background-color: #bfbfbf;
+        width: 150px;
+        height: 575px;
+        float: left;
+    }
+
+    /*the <center> tag is deprecated in HTML 5, so this will have to do*/
+    .center{
+        text-align: center;
+    }
+    
+    .iconPlacement{
+        /*correctly align image*/
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        /*image margins*/
+        width: 150px;
+    }
+
+    .captionPlacement{
+        display: block;
+    }
+
+    .newsSize{
+        font-size: 20px;
+    }
+</style>
+
+<!--Divs have been introduced-->
+<div class = "boxModel"></div>
+
+<header>
+    <h1><img src = "unnamed.jpg" width="40" height="40">Welcome to Nonexistent Gambits</h1>
+</header>
+
+<body>
+
+<!--<br> was introduced-->
+
+<div class="center"><img src = "unnamed.jpg" width = "440" height = "130"><br></div>
+<!--center the icons-->
+<div class="center">
+<div class="iconPlacement">
+<img src = "unnamed.jpg" width="50" height="50">
+<span class="captionPlacement"><a href="#">Products</a></span></div>
+<div class="iconPlacement">
+<img src = "unnamed.jpg" width="50" height="50">
+<span class="captionPlacement"><a href="#">About Us</a></span></div>
+<div class="iconPlacement"> 
+<img src = "unnamed.jpg" width="50" height="50">
+<span class="captionPlacement"><a href="#">Contact Us</a></span></div>
+<div class="iconPlacement"> 
+<img src = "unnamed.jpg" width="50" height="50"><br>
+<span class="captionPlacement"><a href="#">Help</a></span></div>
+</div>
+
+<div class="newsSize">&emsp; News</div><br>
+
+<table style="width:85%">
+    <tr>
+        <td>asas</td>
+        <td>asas</td>
+    </tr>
+    <tr>
+        <td>asas</td>
+        <td>asas</td>
+    </tr>
+</table>
+
+<br><br>
+<!--horizontal rule tag draws a slightly faded line-->
+<hr style="width:60%">
+<br>
+
+
+
+</body>
+
+</html>
