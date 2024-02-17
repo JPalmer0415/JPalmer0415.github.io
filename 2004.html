@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!--TODO: Explanation2004.html-->
+<!--Finish 3 columns-->
+<!--Add footer-->
+<!--Make links in nav bar-->
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #dadada;
+    }
+
+    table{
+        width: 100%;
+        height: 100%;
+        /*the old cellpadding and cellspacing of HTML is deprecated, this is cleaner anyway*/
+        padding: 10;
+        border-spacing: 20px 5px; 
+        /*keeping the borders visible helps when creating the page*/
+        border: 1px solid black;
+    }
+
+    a:link{
+        color:black;
+    }
+
+    a:visited{
+        color:black;
+    }
+
+    a:link {
+    text-decoration: none;
+    }
+
+    a:visited {
+    text-decoration: none;
+    }
+
+    .navBarGradient{
+        background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(138,138,138,1) 50%, rgba(205,205,205,1) 100%);
+    }
+
+    button{
+        border: none;
+        background: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        font-size: large;
+    }
+
+    .column{
+        width: 33%;
+        height: 33%;
+        background-color: black;
+        
+    }
+
+
+</style>
+
+<head>
+
+<title>Nonexistent Gambits</title>
+
+</head>
+
+<body>
+    
+<table>
+<!--Header Section with company title and options-->
+<tr>
+<td>Nonexistent Gambits</td>
+<td colspan="2" style="text-align: right; font-size: medium;"><a href="#">Sign In</a> &ensp; | &ensp; <a href="#">Sign Up</a> &ensp; | &ensp; <a href="#">Help</a></td>        
+</tr>
+
+<!--Navigation Bar-->
+<tr>
+    <td colspan="3" height="50px" style="border-radius: 15px; padding-left: 5px; text-align: center; font-size: medium;" class="navBarGradient">
+    Home &ensp; | &ensp; Products &ensp; | &ensp; Downloads &ensp; | &ensp; Store &ensp; | &ensp; About Us &ensp; | &ensp; Contact Us &ensp; | &ensp; Help &ensp; |
+    <input type="text" style="width: 30%;"> <button type="button">Search</button>
+</td>
+</tr>
+
+<!--Banner-->
+<tr>
+    <!--colspan helps images behave with other cells-->
+    <!--replace with an ad for fictional book Web 2.0 for Cavemen-->
+    <td colspan="3" style="text-align: center;"><img src="unnamed.jpg" width="1320px" height="200px" style="border-radius: 10%;"></img></td>
+</tr>
+
+<!--Left Column-->
+<tr>
+<td class="column" style="color: white;">adadd</td>
+
+<!--Middle Column-->
+<td class="column" style="color: white;">adadd</td>
+
+<!--Right Column-->
+<td class="column" style="color: white;">adadd</td>
+</tr>
+</table>
+
+</body>
+
+</html>
