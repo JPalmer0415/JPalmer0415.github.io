@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--TODO: Explanation2004.html-->
-<!--Finish 3 columns-->
-<!--Add footer-->
-<!--Make links in nav bar-->
+<!--Put a corkboard behind columns-->
 <style>
     body{
         margin: 0px;
@@ -20,7 +17,7 @@
         padding: 10;
         border-spacing: 20px 5px; 
         /*keeping the borders visible helps when creating the page*/
-        border: 1px solid black;
+        border: 0;
     }
 
     a:link{
@@ -53,13 +50,36 @@
     }
 
     .column{
-        width: 33%;
-        height: 33%;
-        background-color: black;
-        
+        background-color: white;
+        vertical-align: top;
+        color: black;
+        font-size: small;
+        border-radius: 5%;
+        border: solid gray 1px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+    .left{
+        width:20%;
+        text-align: center;
+    }
 
+    .right{
+        width: 40%;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    .middle{
+        width:40%;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    .foot{
+        font-size: x-small;
+        text-align: center;
+    }
 </style>
 
 <head>
@@ -74,13 +94,14 @@
 <!--Header Section with company title and options-->
 <tr>
 <td>Nonexistent Gambits</td>
-<td colspan="2" style="text-align: right; font-size: medium;"><a href="#">Sign In</a> &ensp; | &ensp; <a href="#">Sign Up</a> &ensp; | &ensp; <a href="#">Help</a></td>        
+<td colspan="2" style="text-align: right; font-size: medium;"><a href="#">Sign In</a> &ensp; | &ensp; <a href="#">Sign Up</a> &ensp; | &ensp; <a href="Explanation2004.html">Help</a></td>        
 </tr>
 
 <!--Navigation Bar-->
 <tr>
     <td colspan="3" height="50px" style="border-radius: 15px; padding-left: 5px; text-align: center; font-size: medium;" class="navBarGradient">
-    Home &ensp; | &ensp; Products &ensp; | &ensp; Downloads &ensp; | &ensp; Store &ensp; | &ensp; About Us &ensp; | &ensp; Contact Us &ensp; | &ensp; Help &ensp; |
+    <a href="2004.html">Home</a> &ensp; | &ensp; <a href="#">Products</a> &ensp; | &ensp; <a href="#">Downloads</a> &ensp; | &ensp; 
+    <a href="#">Store</a> &ensp; | &ensp; <a href="#">About Us</a> &ensp; | &ensp; <a href="#">Contact Us</a> &ensp; | &ensp; <a href="Explanation2004.html">Help</a> &ensp; |
     <input type="text" style="width: 30%;"> <button type="button">Search</button>
 </td>
 </tr>
@@ -94,13 +115,59 @@
 
 <!--Left Column-->
 <tr>
-<td class="column" style="color: white;">adadd</td>
+<td class="column left"> <div style="text-align: left; padding-left: 15px; padding-top: 5px;">Shortcuts</div><hr>
+<a href="#" style="color: blue;">Site Map</a><br><br>
+<a href="#" style="color: blue;">Free Trials</a><br><br>
+<a href="#" style="color: blue;">Product Demos</a><br><br>
+<a href="#" style="color: blue;">Web 2.0?</a><br><br>
+<a href="#" style="color: blue;">Design Tutorials</a><br><br>
+<a href="#" style="color: blue;">Articles</a><br><br>
+<a href="#" style="color: blue;">Free Tips and Tricks</a><br><br>
+<a href="#" style="color: blue;">Site Deployment Tutorial</a><br><br>
+<a href="#" style="color: blue;">Reviews</a><br></td>
 
 <!--Middle Column-->
-<td class="column" style="color: white;">adadd</td>
+<td class="column middle">Products<hr>
+<ul>
+    <li><a href="#" style="color: blue;">Books</a>
+        <ul>
+            <li>Our books cover a variety of topics such as the principles behind web design, common CSS layouts, and even general programming
+                for Javascript.
+            </li>
+        </ul>
+    </li>
+    <li><a href="#" style="color: blue;">Gambit</a>
+        <ul>
+            <li>Create your own websites using Gambit, our IDE.</li><br>
+        </ul>
+    </li>
+    <li><a href="#" style="color: blue;">Latest Software Versions</a>
+        <ul>
+            <li>All of the latest versions of our software.</li><br>
+        </ul>
+    </li>
+    <li><a href="#" style="color: blue;">Gambit Suite</a>
+        <ul>
+            <li>Download our navigator for convenient access to all of our software.</li><br>
+        </ul>
+    </li>
+</ul></td>
 
 <!--Right Column-->
-<td class="column" style="color: white;">adadd</td>
+<td class="column right">News Headlines<hr>
+    <ul>
+        <li>09 October - Scheduled Maintenance</li><br>
+        <li>01 October - New Article: Web 2.0: Welcome to YOUR Internet</li><br>
+        <li>30 September - New Patches for Gambit IDE</li><br>
+        <li>15 September - Forums in the Works</li><br>
+        <li><a href="#" style="color: blue;">News Archives</a></li>
+    </ul></td>
+</tr>
+
+<!--Footer-->
+<tr class="foot">
+    <td colspan="3"><a href="#">About Us</a> &ensp; | &ensp; <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">Privacy Policy &ensp; | &ensp; </a>
+    <a href="#">Accessibility</a> &ensp; | &ensp; <a href="#">Report Piracy</a> &ensp; | &ensp; <a href="#">Send Feedback</a> &ensp; | &ensp; <a href="index.html">Back to the Present Day</a></td>
 </tr>
 </table>
 
