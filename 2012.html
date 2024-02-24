@@ -1,0 +1,264 @@
+<!--TODO: Make Logo and slogan to right of banner bigger and add a sign up button-->
+<!--Make news items and footer responsive-->
+
+<!doctype HTML>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-size: 11px;
+    color:black;
+}
+
+.options{
+    position: relative;
+    top: 11px;
+    right: 12px; 
+    color: #838383;
+    font-size: 13.5px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.options button{
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    border: 1px solid black;
+    border-left: none;
+    background: transparent;
+    cursor:pointer;
+    float: right;
+}
+
+.options button img{
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+}
+
+a:link{
+    text-decoration: none;
+    color: #838383;
+}
+
+
+input[type=text]{
+    width: 10%;
+    height:12px;
+    padding: 14px 35px 14px 5px;
+    border: 1px solid black;
+    border-right: none;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0.73691967575534266764922623434046%;
+    overflow: hidden;
+    background-color: rgb(191, 191, 191);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+li{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+li a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.navBar{
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+
+li a:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+img.logo{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+}
+
+img.banner{
+    position: relative;
+    left: 10px;
+    float: left;
+    background-position: bottom left;
+    width: 44.2152%; 
+    height: 500px;
+    max-width: 100%;
+}
+
+.adText{
+    position:relative;
+    background-position: bottom right;
+    float:right;
+    right: 475px;
+}
+
+.bannerContent{
+    width:100% /*1357px*/;
+    height:500px;
+}
+
+ul.shortcuts{
+    padding-top: 15px;
+    padding-bottom: 15px;    
+}
+
+li a.shortcuts{
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+
+.headlines{
+    float: left;
+    margin: 5px;
+    width: 24%;
+    background-color: rgb(191, 191, 191);
+    border: 1px solid black;
+    border-spacing: 10px;
+    text-align: center;
+    color: rgb(40, 40, 40);
+}
+
+.headlinesSection::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 9px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+footer a:link{
+    color: blue;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px){
+    img.banner, .adText{
+        width:90%;
+        height: auto;
+    }
+    input[type=text]{
+        width:20%;
+    }
+}
+</style>
+
+<html>
+
+<title>
+Nonexistent Gambits
+</title>
+
+<header><img class="logo" src="unnamed.jpg" width="70" height="70">
+<!--Mini Menu-->
+    <div class="options">
+    <!--Maybe make a search bar like MC-->
+    <a href="#">Sign In</a> | <a href="#">About Us</a> | <a href="#">News</a> <br> <input type="text" placeholder="Search">
+    <button type="submit"><img src="search.png"></button>
+    </div>
+</header>
+
+<body>
+<!--Navigation Bar-->
+<div>
+<br><br>
+<ul>
+    <li><a class="navBar" href="2009.html">Home</a></li>
+    <li><a class="navBar" href="#">Store</a></li>
+    <li><a class="navBar" href="#">Downloads</a></li>
+    <li><a class="navBar" href="#">Products</a></li>
+    <li><a class="navBar" href="#">Business</a></li>
+    <li><a class="navBar" href="#">Contact</a></li>
+    <li><a class="navBar" href="Explanation2009.html">Help</a></li>
+</ul>
+</div>
+<div class="bannerContent">
+    <!--Banner and video-->
+    <div>
+    <img class="banner" src="unnamed.jpg">
+    </div>
+
+    <div class="adText">
+    <h1>Nonexistent Gambits</h1>
+    <h2 style="color: #838383;">Your clients won't even notice.</h2>
+    </div>
+    <!--Make a custom image of a button (possibly in 2 different states hover/no hover)-->
+</div>
+
+<div>
+<ul class="shortcuts">
+    <li><a class="shortcuts" href="#">Product Demos</a></li>
+    <li><a class="shortcuts" href="#">Tutorials</a></li>
+    <li><a class="shortcuts" href="#">Articles</a></li>
+    <li><a class="shortcuts" href="#">Reviews</a></li>
+</ul>
+</div>
+
+<a href="#"><div class="headlinesSection">
+    <div class="headlines">
+        <h3>&lt;div&gt; for Dinguses</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>If you still use tables, please read this tutorial!</p>
+    </div>
+
+    <div class="headlines">
+        <h3>Gambit IDE Version 7.01</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>Changelog available</p>
+    </div>
+
+    <div class="headlines">
+        <h3>Unnoticable Design 6 Ed.</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>Now available as a PDF</p>
+    </div>
+
+    <div class="headlines">
+        <h3>Flat Design</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>Why reduce complexity?</p>
+    </div>
+</a>
+</div>
+
+<footer>
+    <a href="#">Site Map</a> &ensp; | &ensp; <a href="#">News</a> &ensp; | &ensp; <a href="#">RSS Feeds</a> &ensp; | &ensp; 
+    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a> &ensp; | &ensp; <a href="Explanation2009.html">Help</a> &ensp; | &ensp; 
+    <a href="index.html">Back to the present day</a>
+</footer>
+
+</body>
+</html>
