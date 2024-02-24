@@ -3,7 +3,7 @@
 <style>
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -16,7 +16,7 @@ body{
 .options{
     position: relative;
     top: 11px;
-    right: 197px; 
+    right: 12px; 
     color: #838383;
     font-size: 10px;
     text-align: right;
@@ -41,15 +41,17 @@ ul{
     margin: 10px;
     overflow: hidden;
     background-color: rgb(191, 191, 191);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 
 li{
     display: inline-block;
-    border-right: 2px solid rgb(151, 151, 151);
+    border-right: 1px solid rgb(171, 171, 171);
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
-
 li a{
     text-align: center;
     padding: 14px 16px;
@@ -57,7 +59,7 @@ li a{
 }
 
 li a.navBar{
-    color: black;
+    color: rgb(40, 40, 40);
     font-size: 16px;
 }
 
@@ -73,15 +75,86 @@ img.logo{
 
 img.banner{
     position: relative;
-    display: inline;
-    left: 130px;
+    left: 10px;
+    float: left;
+    background-position: bottom left;
 }
 
 video{
-    position:absolute;
-    right: 375px;
+    float: right;
+    position:relative;
+    background-position: right;
+    right:15px;
 }
 
+.adText{
+    position:relative;
+    background-position: bottom right;
+    float:right;
+    right: 485px;
+}
+
+.freeTrialButton{
+    position:absolute;
+    background-color: black;
+    width: 200px;
+    height: 60px;
+    float: right;
+    bottom: 17px;
+    right: 265px;
+}
+
+.bannerContent{
+    width:1357px;
+    height:500px;
+}
+
+ul.shortcuts{
+    padding-top: 15px;
+    padding-bottom: 15px;    
+}
+
+li a.shortcuts{
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+
+.headlines{
+    float: left;
+    margin: 5px;
+    width: 24%;
+    background-color: rgb(191, 191, 191);
+    border: 1px solid black;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+.headlinesSection::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.headlines{
+    color: rgb(40, 40, 40);
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 9px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+footer a:link{
+    color: blue;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
 </style>
 
 <html>
@@ -103,7 +176,7 @@ Nonexistent Gambits
 <div>
 <br><br>
 <ul>
-    <li><a class="navBar" href="#">Home</a></li>
+    <li><a class="navBar" href="2009.html">Home</a></li>
     <li><a class="navBar" href="#">Store</a></li>
     <li><a class="navBar" href="#">Downloads</a></li>
     <li><a class="navBar" href="#">Products</a></li>
@@ -111,18 +184,69 @@ Nonexistent Gambits
     <li><a class="navBar" href="#">News</a></li>
     <li><a class="navBar" href="#">About Us</a></li>
     <li><a class="navBar" href="#">Contact</a></li>
-    <li><a class="navBar" href="#">Help</a></li>
+    <li><a class="navBar" href="Explanation2009.html">Help</a></li>
+</ul>
+</div>
+<div class="bannerContent">
+    <!--Banner and video-->
+    <div>
+    <img class="banner" src="unnamed.jpg" width="600" height="500">
+    <!--This would most likely be a flash video in 2009, but Flash has been deprecated from most browsers, so an HTML5 video is used instead-->
+    <!--Replace with actual video-->
+    <video width="735" height="400" controls>
+        <source src="it's time to stop posting.webm" type="video/webm">
+    </video>
+    </div>
+
+    <div class="adText">
+    <h1>Nonexistent Gambits</h1>
+    <h2 style="color: #838383;">Your clients won't even notice.</h2>
+    </div>
+    <!--Make a custom image of a button (possibly in 2 different states hover/no hover)-->
+    <div class="freeTrialButton"></div>
+</div>
+
+<div>
+<ul class="shortcuts">
+    <li><a class="shortcuts" href="#">Product Demos</a></li>
+    <li><a class="shortcuts" href="#">Tutorials</a></li>
+    <li><a class="shortcuts" href="#">Articles</a></li>
+    <li><a class="shortcuts" href="#">Reviews</a></li>
 </ul>
 </div>
 
-<!--Banner-->
-<div>
-<img class="banner" src="unnamed.jpg" width="500" height="500">
-<!--Replace with actual video-->
-<video width="500" height="400">
-    <source src="it's time to stop posting.webm" type="video/webm">
-</video>
+<a href="#"><div class="headlinesSection">
+    <div class="headlines">
+        <h3>&lt;div&gt; for Dinguses</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>If you still use tables, please read this tutorial!</p>
+    </div>
+
+    <div class="headlines">
+        <h3>Gambit IDE Version 7.01</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>Changelog available</p>
+    </div>
+
+    <div class="headlines">
+        <h3>Unnoticable Design 6 Ed.</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>Now available as a PDF</p>
+    </div>
+
+    <div class="headlines">
+        <h3>Flat Design</h3>
+        <img src="unnamed.jpg" width="80" height="80">
+        <p>Why reduce complexity?</p>
+    </div>
+</a>
 </div>
+
+<footer>
+    <a href="#">Site Map</a> &ensp; | &ensp; <a href="#">News</a> &ensp; | &ensp; <a href="#">RSS Feeds</a> &ensp; | &ensp; 
+    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a> &ensp; | &ensp; <a href="Explanation2009.html">Help</a> &ensp; | &ensp; 
+    <a href="index.html">Back to the present day</a>
+</footer>
 
 </body>
 </html>
