@@ -93,6 +93,28 @@ li a:hover{
     background-color: rgb(211, 211, 211);
 }
 
+li button{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(191, 191, 191);
+}
+
+li button:hover{
+    background-color: rgb(211, 211, 211);
+
+}
+
+.options a:visited{
+    color:#838383;
+}
+
+
+
 img.logo{
     position:absolute;
     left: 10px;
@@ -105,15 +127,17 @@ img.banner{
     float: left;
     background-position: bottom left;
     width: 44.2152%; 
-    height: 500px;
+    height: 478px;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .adText{
-    position:relative;
-    background-position: bottom right;
-    float:right;
-    right: 475px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    font-size: 2.5vw;
+    
 }
 
 .bannerContent{
@@ -148,6 +172,10 @@ li a.shortcuts{
     clear: both;
 }
 
+.topHeadlinesText{
+    padding-left: 5px;
+}
+
 footer{
     text-align: center;
     border-top: 1px solid black;
@@ -161,17 +189,74 @@ footer a:link{
     color: blue;
 }
 
+footer a:visited{
+    color: blue;
+}
+
 footer a:hover{
     text-decoration: underline;
 }
 
+.subNav{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.subNav-Content{
+    display: none;
+    position: absolute;
+    left: 10px;
+    background-color: rgb(211, 211, 211);
+    width: 98.5%;
+    z-index: 1;
+}
+
+.subNav-Content p{
+    float: left;
+    color: rgb(40, 40, 40);
+}
+
+.subNav:hover .subNav-Content{
+    display: block;
+}
+
 @media only screen and (max-width: 800px){
-    img.banner, .adText{
-        width:90%;
+    img.banner{
+        width:97%;
         height: auto;
+        max-height: 430px;
+        
     }
     input[type=text]{
-        width:20%;
+        width:30%;
+    }
+
+    .adText{
+        position: static;
+        top: 100%;
+        text-align: center;
+    }
+
+    ul{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    ul.shortcuts li{
+        display: block;
+    }
+    
+    ul.shortcuts li a{
+        display: block;
+    }
+
+    .headlines{
+        
+        width: 98.1%;
+    }
+
+    .subNav-Content{
+        left: 4px;
     }
 }
 </style>
@@ -196,13 +281,25 @@ Nonexistent Gambits
 <div>
 <br><br>
 <ul>
-    <li><a class="navBar" href="2009.html">Home</a></li>
+    <li><a class="navBar" href="2012.html">Home</a></li>
     <li><a class="navBar" href="#">Store</a></li>
     <li><a class="navBar" href="#">Downloads</a></li>
     <li><a class="navBar" href="#">Products</a></li>
     <li><a class="navBar" href="#">Business</a></li>
     <li><a class="navBar" href="#">Contact</a></li>
-    <li><a class="navBar" href="Explanation2009.html">Help</a></li>
+    <div class="subNav">
+    <li><button>Help</button>
+        <div class="subNav-Content">
+            <p>Responsive design is here! Though most sites elected not to use it, Nonexistent Gambits does use it in its attempt to stay cutting edge.
+               Aside from minor changes, this is just 2009's design converted into a responsive design. According to the book,
+               "Responsive Web Design with HTML5 and CSS3," "In reality, although theoretically it would always be best to start a design thinking
+               about the mobile/small screen experience and building up from there, it's going to be some years until everyone understands the
+               benefits of that thinking. Until then, it's likely you'll need to take existing desktop designs and 'retro-fit' them to work
+               responsively." Thus, the design is still &lt;div&gt;-based.
+            </p>
+        </div>
+    </li>
+    </div>
 </ul>
 </div>
 <div class="bannerContent">
@@ -214,6 +311,7 @@ Nonexistent Gambits
     <div class="adText">
     <h1>Nonexistent Gambits</h1>
     <h2 style="color: #838383;">Your clients won't even notice.</h2>
+    <p>You'll notice that we care about your phones, though!</p>
     </div>
     <!--Make a custom image of a button (possibly in 2 different states hover/no hover)-->
 </div>
@@ -226,6 +324,8 @@ Nonexistent Gambits
     <li><a class="shortcuts" href="#">Reviews</a></li>
 </ul>
 </div>
+
+<p><h2 class="topHeadlinesText">Top Headlines</h2></p>
 
 <a href="#"><div class="headlinesSection">
     <div class="headlines">
@@ -256,7 +356,7 @@ Nonexistent Gambits
 
 <footer>
     <a href="#">Site Map</a> &ensp; | &ensp; <a href="#">News</a> &ensp; | &ensp; <a href="#">RSS Feeds</a> &ensp; | &ensp; 
-    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a> &ensp; | &ensp; <a href="Explanation2009.html">Help</a> &ensp; | &ensp; 
+    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a><br> 
     <a href="index.html">Back to the present day</a>
 </footer>
 
