@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <html>
 
 <head><link rel="stylesheet" href="2014style.css"></head>
 
 <body>
 
-<div class="col-12 header">
+<div class="col-12 header row">
     <ul>
         <li><a href="#">News</a></li>
         <li><a href="#">About Us</a></li>
@@ -14,22 +17,101 @@
     </ul>
 </div>
 
-<div class="col-12 navbar">
+<!--Imporove on this for next page, use a clean responsive navbar-->
+<div class="col-12 navbar row">
     <ul>
         <li><a href="2014.html">*logo*</a></li>
+        <span class="hiddenresponsive">
         <li><a href="#">Store</a></li>
         <li><a href="#">Downloads</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Business</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Help</a></li>
+        </span>
         <li>
             <input type="text" placeholder="Search">
             <button type="submit" class="searchbutton">
             <img src="search.png"></button>
         </li>
+        <li class="hamburgermenu" onclick="openNav()">
+            <img src="Hamburger_icon.svg" height="30px">   
+        </li>
     </ul>
+</div>
+
+<div id="rightSidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Store</a>
+    <a href="#">Downloads</a>
+    <a href="#">Products</a>
+    <a href="#">Business</a>
+    <a href="#">Contact</a>
+    <a href="#">Help +</a>
+    <div class="dropdowncontainer">
+        <p>asdsadasddsada</p>
+    </div>
+</div>
+
+<div class="col-12 banner row">
+    <a href="#"><img src="unnamed.jpg"></a>
+</div>
+
+<!--image about responsive design tutorial-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<!--image about product suite-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<!--image about free tricks with the one showcased being the content/screen width for responsive-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<!--image about "Viewports for the Blind" article-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<div class="col-12 row">
+    <footer>
+    <a href="#">Site Map</a> &ensp; | &ensp; <a href="#">News</a> &ensp; | &ensp; <a href="#">RSS Feeds</a> &ensp; | &ensp; 
+    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a><br> 
+    <a href="index.html">Back to the present day</a>
+    </footer>
 </div>
 
 </body>
 </html>
+
+<script>
+function openNav(){
+    document.getElementById("rightSidenav").style.width = "250px";
+}
+
+function closeNav(){
+    document.getElementById("rightSidenav").style.width = "0";
+
+}
+</script>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+
+}
+</script>
