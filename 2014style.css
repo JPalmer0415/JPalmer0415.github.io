@@ -108,7 +108,7 @@ html{
 .navbar input[type="text"]{
     border:none;
     padding: 10px 0 10px 5px;
-    width: 70%;
+    width: 90%;
 }
 
 .hamburgermenu{
@@ -174,6 +174,29 @@ footer a:visited{
     color: blue;
 }
 
+.helpsubnav{
+    display: inline-block;
+    text-align: left;
+}
+
+.helpsubnav-Content{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+
+.helpsubnav-Content p{
+    float: left;
+    color: black;
+}
+
+.helpsubnav:hover .helpsubnav-Content{
+    display: block;
+}
+
 .sidenav{
     height: 100%;
     width: 0;
@@ -201,20 +224,31 @@ footer a:visited{
     color: #f1f1f1;
 }
 
+.sidenav input[type="text"]{
+    display: inline-block;
+    padding: 10px 5px 10px 0;
+    width: 87%;
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
     left: 0;
     font-size: 36px;
     margin-left: 10px;
-  }
-
-.dropdowncontainer{
-    display: none;
-    background-color: #f1f1f1;
 }
 
-@media only screen and (max-width: 600px){
+.dropdowncontainer{
+    display: block;
+    
+}
+
+.sidedrop-Content{
+    display: none;
+    position: absolute;
+    color: white;
+}
+@media only screen and (max-width: 1000px){
     .header{
         visibility: hidden;
         height: 0;
@@ -242,11 +276,19 @@ footer a:visited{
     }
 
     .hiddenresponsive a{
-        visibility: hidden;
+        display: none;
     }
 
+    .hiddenresponsive button{
+        display: none;
+    }
     @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
       }
+    }
+
+/*To continue hiding my shamefully nonresponsive navbar*/
+@media only screen and (max-width: 800px){
+    .news{width: 100%; height: auto;}
 }
