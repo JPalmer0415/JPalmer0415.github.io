@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+
+<head><link rel="stylesheet" href="2024style.css"></head>
+
+<body>
+
+<nav class="col-12 row">
+    <ul>
+        <li><a href="2024.html">*logo*</a></li>
+        
+        <li><a class="hide" href="#">Store</a></li>
+        <li><a class="hide" href="#">Downloads</a></li>
+        <li><a class="hide" href="#">Products</a></li>
+        <li><a class="hide" href="#">Business</a></li>
+        <li><a class="hide" href="#">Contact</a></li>
+        <div class="helpsubnav hide">
+            <li><a href="#">Help</a></li>
+            <div class="col-12 helpsubnav-Content" >
+                <p>2014's design is grid-based. Specifically, each row on the page spans a certain number of columns with each column's length
+                   taking up 1/12 of the screen's width. This allows for easier implementation of responsive design. Websites are now starting
+                   to adopt a "mobile first" methodology where they are designed for the smallest screen widths first. Navigation menus replace
+                   navigation bars for a more optimal mobile experience and designs generally use all of a screen's width.
+                </p>
+            </div>
+        </div>
+    
+        <li class="hamburgermenu" onclick="openNav()">
+            <img src="Hamburger_icon.svg" height="30px">   
+        </li>
+    </ul>
+</nav>
+
+<div id="rightSidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <input type="text" placeholder="Search">
+    <ul>
+    <li><a href="#">Store</a></li>
+    <li><a href="#">Downloads</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Contact</a></li>
+    <li>
+        <div class="dropdowncontainer" onclick="openHelp()">
+        <a href="#">Help</a>
+            <div id="sidedrop" class="sidedrop-Content">
+                <p>2014's design is grid-based. Specifically, each row on the page spans a certain number of columns with each column's length
+                taking up 1/12 of the screen's width. This allows for easier implementation of responsive design. Websites are now starting
+                to adopt a "mobile first" methodology where they are designed for the smallest screen widths first. Navigation menus replace
+                navigation bars for a more optimal mobile experience and designs generally use all of a screen's width.
+                </p>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+
+
+<div class="col-12 banner row">
+    <a href="#"><img src="unnamed.jpg"></a>
+</div>
+
+<!--image about responsive design tutorial-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<!--image about product suite-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<!--image about free tricks with the one showcased being the content/screen width for responsive-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<!--image about "Viewports for the Blind" article-->
+<div class="col-3 news row">
+    <a href="#">
+        <img src="unnamed.jpg">
+    </a>
+</div>
+
+<div class="col-12 row">
+    <footer>
+    <a href="#">Site Map</a> &ensp; | &ensp; <a href="#">News</a> &ensp; | &ensp; <a href="#">RSS Feeds</a> &ensp; | &ensp; 
+    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a><br> 
+    <a href="index.html">Back to the present day</a>
+    </footer>
+</div>
+
+</body>
+</html>
+
+<script>
+function openNav(){
+    document.getElementById("rightSidenav").style.display = "flex";
+}
+
+function closeNav(){
+    document.getElementById("rightSidenav").style.display = "none";
+}
+
+function openHelp(){
+    document.getElementById("sidedrop").style.display = "block";
+}
+</script>
