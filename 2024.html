@@ -19,7 +19,7 @@
         <li><a class="hide" href="#">Contact</a></li>
         <div class="helpsubnav hide">
             <li><a href="#">Help</a></li>
-            <div class="col-12 helpsubnav-Content" >
+            <div class="col-12 helpsubnav-Content">
                 <p>2014's design is grid-based. Specifically, each row on the page spans a certain number of columns with each column's length
                    taking up 1/12 of the screen's width. This allows for easier implementation of responsive design. Websites are now starting
                    to adopt a "mobile first" methodology where they are designed for the smallest screen widths first. Navigation menus replace
@@ -27,77 +27,129 @@
                 </p>
             </div>
         </div>
-    
+        <div class="hoversearch">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <div class="col-12 hoversearch-Bar">
+                <p><input type="text" placeholder="Search"></p>    
+            </div>
+        </div>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a></li>
         <li class="hamburgermenu" onclick="openNav()">
-            <img src="Hamburger_icon.svg" height="30px">   
-        </li>
+            <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
 </nav>
 
 <div id="rightSidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <input type="text" placeholder="Search">
     <ul>
+    <li>
+    <div class="sidesearch">
+        <input type="text" placeholder="Search">
+        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+    </div>
+    </li>
     <li><a href="#">Store</a></li>
     <li><a href="#">Downloads</a></li>
     <li><a href="#">Products</a></li>
     <li><a href="#">Business</a></li>
     <li><a href="#">Contact</a></li>
     <li>
-        <div class="dropdowncontainer" onclick="openHelp()">
+        <div class="dropdowncontainer" onclick="openOverlay()">
         <a href="#">Help</a>
-            <div id="sidedrop" class="sidedrop-Content">
-                <p>2014's design is grid-based. Specifically, each row on the page spans a certain number of columns with each column's length
-                taking up 1/12 of the screen's width. This allows for easier implementation of responsive design. Websites are now starting
-                to adopt a "mobile first" methodology where they are designed for the smallest screen widths first. Navigation menus replace
-                navigation bars for a more optimal mobile experience and designs generally use all of a screen's width.
-                </p>
-            </div>
         </div>
     </li>
     </ul>
 </div>
 
+<div id="overlay" class="helpoverlay" onclick="closeOverlay()">
+    <span class="overlaytext">
+        <p><h2>asdasdasada</h2>sdasdas</p>
+    </span>
+</div>
 
 <div class="col-12 banner row">
     <a href="#"><img src="unnamed.jpg"></a>
 </div>
 
 <!--image about responsive design tutorial-->
-<div class="col-3 news row">
+<div class="col-6 news row">
     <a href="#">
         <img src="unnamed.jpg">
     </a>
 </div>
 
 <!--image about product suite-->
-<div class="col-3 news row">
+<div class="col-6 news row">
     <a href="#">
         <img src="unnamed.jpg">
     </a>
 </div>
 
 <!--image about free tricks with the one showcased being the content/screen width for responsive-->
-<div class="col-3 news row">
+<div class="col-6 news row">
     <a href="#">
         <img src="unnamed.jpg">
     </a>
 </div>
 
 <!--image about "Viewports for the Blind" article-->
-<div class="col-3 news row">
+<div class="col-6 news row">
     <a href="#">
         <img src="unnamed.jpg">
     </a>
 </div>
 
-<div class="col-12 row">
-    <footer>
-    <a href="#">Site Map</a> &ensp; | &ensp; <a href="#">News</a> &ensp; | &ensp; <a href="#">RSS Feeds</a> &ensp; | &ensp; 
-    <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">About Us</a><br> 
-    <a href="index.html">Back to the present day</a>
-    </footer>
+<div class="col-12 row slideshow-container">
+    
+    <div class="slides fade">
+        <img src="unnamed.jpg">
+        <div class="slidetext">
+            Bottom text
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <img src="unnamed.jpg">
+        <div class="slidetext">
+            Bottom text
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <img src="unnamed.jpg">
+        <div class="slidetext">
+            Bottom text
+        </div>
+    </div>
+
+
+    <a class="prevbutton" onclick="plusSlides(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></a>
+    <a class="nextbutton" onclick="plusSlides(1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
 </div>
+
+<div class="navigationdots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<br>
+<hr>
+    <!--Footer-->
+    <div class="col-4 footcolumn">
+    <ul>
+    <li><a href="#"><h3>Downloads</h3></a></li>
+    <li></li>
+    </ul>
+    </div>
+    
+    <div class="col-4 footcolumn">
+        <a href="#"><h3>Products</h3></a>
+    </div>
+
+    <div class="col-4 footcolumn noborder">
+        <a href="#"><h3>About</h3></a>
+    </div>
 
 </body>
 </html>
@@ -114,4 +166,43 @@ function closeNav(){
 function openHelp(){
     document.getElementById("sidedrop").style.display = "block";
 }
+
+function openOverlay(){
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeOverlay(){
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n){
+        showSlides(slideIndex +=n)
+    }
+
+    function currentSlide(n){
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n){
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        /*go to first slide if last slide*/
+        if (n > slides.length) {slideIndex = 1};
+        /*go to last slide if previous button clicked on first slide*/
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < dots.length; ++i){
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; ++i){
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
 </script>
