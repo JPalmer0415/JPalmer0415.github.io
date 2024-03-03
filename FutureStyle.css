@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+  float: left;
+  padding: 15px;
+  border: none;
+}
+
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(245,245,245);
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: rgb(191, 191, 191);
+    position: fixed;
+    z-index: 1;
+}
+
+nav li{
+    height: 30px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover{
+    background-color: white;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.hamburgermenu{
+    display: none;
+}
+
+.banner{
+    margin:0;
+    padding:0;
+}
+
+.banner img{
+    width: 100%;
+    height: 100vh;
+    max-height: 619px
+}
+
+.news{
+    padding: 1px;
+}
+
+.news img{
+    width: 100%;
+    height:auto;
+    max-height: 300px;
+}
+
+footer{
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a{
+    text-decoration: none;
+    color: blue;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color: blue;
+}
+
+.helpsubnav-Content{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+
+.helpsubnav-Content p{
+    float: left;
+    color: black;
+}
+
+.helpsubnav:hover .helpsubnav-Content{
+    display: block;
+}
+
+.hoversearch-Bar{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    z-index: 1;
+    border: none;
+}
+
+.hoversearch-Bar input[type="text"]{
+    width: 100%;
+    padding: 5px 0 5px 1px;
+}
+
+.hoversearch:hover .hoversearch-Bar{
+    display: block;
+}
+
+.sidenav{
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    padding-top: 60px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    line-height: 55px;
+}
+
+.sidenav p{
+    line-height: 20px;
+}
+
+.sidenav li{
+    width: 100%;
+}
+
+.sidenav a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+    text-align: right;
+  }
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidesearch{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidenav input[type="text"]{
+    width: 100%;
+    padding: 10px 35px 10px 5px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.sidenav button{
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.dropdowncontainer{
+    display: block;
+}
+
+.sidedrop-Content{
+    display: none;
+    height: 100%;
+    color: white;
+}
+
+.helpoverlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.overlaytext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.overlaytext p{
+    text-align: center;
+}
+
+.slideshow-container{
+    position: relative;
+    margin: auto;
+    padding: 1px;
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: auto;
+}
+
+.slides{
+    display: none;
+}
+
+.prevbutton, .nextbutton{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.nextbutton{
+    right: 0;
+}
+
+.prevbutton:hover, .nextbutton:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.slidetext{
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
+    text-align: center;
+}
+
+.navigationdots{
+    text-align: center;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.footcolumn{
+    border-right: 1px solid gray;
+}
+
+.noborder{
+    border: none;
+}
+
+.footcolum ul{
+    list-style-type: none;
+}
+
+.footcolumn a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.footcolumn a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.openchat{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.aichatpopup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.formcontainer{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.formcontainer textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+.formcontainer textarea:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+.formcontainer .btn{
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.formcontainer .cancel{
+    background-color: purple;
+}
+
+.formcontainer .btn:hover, .openchat:hover{
+    opacity: 1;
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+@media only screen and (max-width: 800px){
+    .hamburgermenu{
+        display: flex;
+        cursor: pointer;
+        /*padding: ;*/
+    }
+
+    .hide{
+        display: none;
+    }
+
+    nav a{
+        padding: 0 15px;
+    }
+
+    .news{
+        width: 100%;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    }
+
+    @media(max-width: 400px){
+        .sidenav{
+            width: 100%;
+        }
+    }
