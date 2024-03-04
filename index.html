@@ -1,9 +1,133 @@
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: black;
+    border: 4px solid white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after{
+    left: -16px;
+}
+
+.content{
+    padding: 20px 30px;
+    position: relative;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px){
+    .timeline::after{
+        left: 31px;
+    }
+
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+    left: 15px;
+    }
+
+    .right {
+    left: 0%;
+  }
+}
+</style>
+
 <html>
 
 <title>UI Evolution</title>
 
-<a href="1991.html">1991</a>
-<br>
+<!--
 <a href="1994.html">1994</a>
 <br>
 <a href="1997.html">1997</a>
@@ -22,5 +146,98 @@
 <br>
 <a href="2024.html">2024</a>
 <br>
-<a href="Future.html">The Future</a>
+<a href="Future.html">The Future</a>-->
+
+<body>
+    <div class="timeline">
+        <a href="1991.html">
+        <div class="container left">
+          <div class="content">
+            <h2>1991</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        </a>
+        <a href="1994.html">
+        <div class="container right">
+          <div class="content">
+            <h2>1994</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        </a>
+        <a href="1997.html">
+        <div class="container left">
+            <div class="content">
+              <h2>1997</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+        </a>
+        <a href="1999.html">
+        <div class="container right">
+            <div class="content">
+              <h2>1999</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+        <a href="2004.html">
+        <div class="container left">
+            <div class="content">
+               <h2>2004</h2>
+               <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+        <a href="2007.html">
+        <div class="container right">
+            <div class="content">
+                <h2>2007</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+        <a href="2009.html">
+        <div class="container left">
+            <div class="content">
+                <h2>2009</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+        <a href="2012.html">
+        <div class="container right">
+            <div class="content">
+                <h2>2012</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+        <a href="2014.html">
+        <div class="container left">
+            <div class="content">
+                <h2>2014</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+        <a href="2024.html">
+        <div class="container right">
+            <div class="content">
+                <h2>2024</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+       <a href="Future.html">
+       <div class="container left">
+            <div class="content">
+                <h2>The Future</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        </a>
+      </div>
+</body>
 </html>
