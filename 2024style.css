@@ -29,6 +29,10 @@
     display: table;
 }
 
+ul{
+    list-style: none;
+}
+
 html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(245,245,245);
@@ -328,11 +332,7 @@ footer a:visited{
 }
 
 .noborder{
-    border: none;
-}
-
-.footcolum ul{
-    list-style-type: none;
+    border-right: none;
 }
 
 .footcolumn a{
@@ -346,6 +346,9 @@ footer a:visited{
     color: blue;
 }
 
+.footcolumn li{
+    text-align: center;
+}
 @keyframes fade{
     from{opacity: .4}
     to{opacity: 1}

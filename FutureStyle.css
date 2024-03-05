@@ -331,7 +331,7 @@ footer a:visited{
     border: none;
 }
 
-.footcolum ul{
+.footcolumn ul{
     list-style-type: none;
 }
 
@@ -356,7 +356,8 @@ footer a:visited{
     position: fixed;
     bottom: 23px;
     right: 28px;
-    width: 280px;
+    width: 25%;
+    max-width: 280px;
 }
 
 .aichatpopup{
