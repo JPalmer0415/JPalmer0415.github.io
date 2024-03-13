@@ -1,6 +1,3 @@
-<!--TODO: Make Logo and slogan to right of banner bigger and add a sign up button-->
-<!--Make news items and footer responsive-->
-
 <!doctype HTML>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +16,14 @@ body{
     padding:0;
     font-size: 11px;
     color:black;
+    background-color: #6A0DAD;
 }
 
 .options{
     position: relative;
     top: 11px;
     right: 12px; 
-    color: #838383;
+    color: white;
     font-size: 13.5px;
     text-align: right;
     padding-top: 10px;
@@ -37,7 +35,7 @@ body{
     padding: 1px;
     border: 1px solid black;
     border-left: none;
-    background: transparent;
+    background-color: white;
     cursor:pointer;
     float: right;
 }
@@ -110,10 +108,8 @@ li button:hover{
 }
 
 .options a:visited{
-    color:#838383;
+    color:white;
 }
-
-
 
 img.logo{
     position:absolute;
@@ -142,7 +138,8 @@ img.banner{
 
 .bannerContent{
     width:100% /*1357px*/;
-    height:500px;
+    height:480px;
+    background-color: rgb(81, 89, 97);
 }
 
 ul.shortcuts{
@@ -159,7 +156,7 @@ li a.shortcuts{
     float: left;
     margin: 5px;
     width: 24%;
-    background-color: rgb(191, 191, 191);
+    background-color: #add8e6;
     border: 1px solid black;
     border-spacing: 10px;
     text-align: center;
@@ -174,6 +171,7 @@ li a.shortcuts{
 
 .topHeadlinesText{
     padding-left: 5px;
+    color: white;
 }
 
 footer{
@@ -186,11 +184,11 @@ footer{
 }
 
 footer a:link{
-    color: blue;
+    color: white;
 }
 
 footer a:visited{
-    color: blue;
+    color: white;
 }
 
 footer a:hover{
@@ -258,6 +256,11 @@ footer a:hover{
     .subNav-Content{
         left: 4px;
     }
+
+    .bannerContent{
+        display: inline-block;
+        height: 50%;
+    }
 }
 </style>
 
@@ -267,7 +270,7 @@ footer a:hover{
 Nonexistent Gambits
 </title>
 
-<header><img class="logo" src="unnamed.jpg" width="70" height="70">
+<header><img class="logo" src="2009Assets/2009logo.png" width="70" height="70">
 <!--Mini Menu-->
     <div class="options">
     <!--Maybe make a search bar like MC-->
@@ -303,9 +306,9 @@ Nonexistent Gambits
 </ul>
 </div>
 <div class="bannerContent">
-    <!--Banner and video-->
+    <!--Banner-->
     <div>
-    <img class="banner" src="unnamed.jpg">
+    <img class="banner" src="2009Assets/2009banner.png">
     </div>
 
     <div class="adText">
@@ -330,26 +333,26 @@ Nonexistent Gambits
 <a href="#"><div class="headlinesSection">
     <div class="headlines">
         <h3>Proportionality</h3>
-        <img src="unnamed.jpg" width="80" height="80">
-        <p>If you still use pixels, please read this tutorial!</p>
+        <img src="2012Assets/2012proportionality.png" width="80" height="80">
+        <p><b>If you still use pixels, please read this tutorial!</b></p>
     </div>
 
     <div class="headlines">
         <h3>Gambit IDE Version 9.0</h3>
-        <img src="unnamed.jpg" width="80" height="80">
-        <p>Changelog available</p>
+        <img src="2009Assets/2009ide.png" width="80" height="80">
+        <p><b>Changelog available</b></p>
     </div>
 
     <div class="headlines">
         <h3>Unnoticable Designs 7ed.</h3>
-        <img src="unnamed.jpg" width="80" height="80">
-        <p>Now less noticable thanks to media queries!</p>
+        <img src="2009Assets/2009book.png" width="80" height="80">
+        <p><b>Now less noticable thanks to media queries!</b></p>
     </div>
 
     <div class="headlines">
         <h3>Responsive Design</h3>
-        <img src="unnamed.jpg" width="80" height="80">
-        <p>Why respond?</p>
+        <img src="2012Assets/2012respond.png" width="80" height="80">
+        <p><b>Why respond?</b></p>
     </div>
 </a>
 </div>
