@@ -94,6 +94,11 @@ html{
     width: 10%;
 }
 
+.navbar li img{
+    position: relative;
+    top: 7px;
+}
+
 .navbar a{
     text-decoration: none;
     color: black;
@@ -140,7 +145,7 @@ html{
 
 .banner img{
     width: 100%;
-    height: 100vh;
+    height: auto;
     max-height: 545px;
 }
 
