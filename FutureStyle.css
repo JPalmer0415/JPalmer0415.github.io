@@ -42,6 +42,7 @@ nav{
     background-color: rgb(191, 191, 191);
     position: fixed;
     z-index: 1;
+    box-shadow: 50px 0 15px 12px;
 }
 
 nav li{
@@ -72,6 +73,11 @@ nav li:first-child{
     margin-right: auto;
 }
 
+nav img{
+    width: 50px;
+    height: 50px;
+}
+
 .hamburgermenu{
     display: none;
 }
@@ -79,12 +85,57 @@ nav li:first-child{
 .banner{
     margin:0;
     padding:0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(FutureAssets/Futurehero.png);
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.banner img{
-    width: 100%;
-    height: 100vh;
-    max-height: 619px
+.hero-text{
+    white-space: nowrap;
+    position: absolute;
+    color: #bfbfbf;
+    font-size: 8vw;
+    letter-spacing: 1px;
+    text-shadow: 
+    0 0 5px #bfbfbf,
+    0 0 5px #bfbfbf,
+    0 0 20px #bfbfbf,
+    0 0 5px #bfbfbf,
+    0 0 80px #bfbfbf,
+    0 0 90px #bfbfbf,
+    0 0 100px #bfbfbf,
+    0 0 150px #bfbfbf;
+}
+
+.hero-text span{
+    animation: flicker 500ms linear;
+}
+
+.hero-text .delay1{
+    animation-delay: 0.8s;
+}
+
+/*
+.hero-text .delay2{
+    animation-delay: 1.4s;
+}
+.hero-text .delay3{
+    animation-delay: 1.8s;
+}*/
+
+@keyframes flicker{
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .news{
@@ -94,7 +145,7 @@ nav li:first-child{
 .news img{
     width: 100%;
     height:auto;
-    max-height: 300px;
+    max-height: 276px;
 }
 
 footer{
@@ -142,6 +193,15 @@ footer a:visited{
     border: none;
 }
 
+.hoversearch{
+    border-radius: 100%;
+    background: #bfbfbf;
+    box-shadow:  4px 4px 0px #8f8f8f,
+                -4px -4px 0px #efefef;
+    margin: 0 10px;
+}
+
+
 .hoversearch-Bar input[type="text"]{
     width: 100%;
     padding: 5px 0 5px 1px;
@@ -149,6 +209,13 @@ footer a:visited{
 
 .hoversearch:hover .hoversearch-Bar{
     display: block;
+}
+
+.person{
+    border-radius: 100%;
+    background: #bfbfbf;
+    box-shadow:  4px 4px 0px #8f8f8f,
+                -4px -4px 0px #efefef;
 }
 
 .sidenav{
@@ -170,6 +237,10 @@ footer a:visited{
 
 .sidenav p{
     line-height: 20px;
+}
+
+.sidenav ul{
+    list-style: none;
 }
 
 .sidenav li{
@@ -325,6 +396,7 @@ footer a:visited{
 
 .footcolumn{
     border-right: 1px solid gray;
+    background-image: url("2004Assets/paper-1959384_1920.jpg");
 }
 
 .noborder{
@@ -338,7 +410,7 @@ footer a:visited{
 .footcolumn a{
     text-decoration: none;
     color: black;
-    text-align: center;
+    
 }
 
 .footcolumn a:hover{
@@ -354,10 +426,12 @@ footer a:visited{
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 23px;
+    bottom: 75px;
     right: 28px;
     width: 25%;
     max-width: 280px;
+    z-index: 9;
+    box-shadow: 2px 2px 15px 5px black;
 }
 
 .aichatpopup{
@@ -367,6 +441,7 @@ footer a:visited{
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
+    box-shadow: 2px 2px 15px 5px black;
 }
 
 .formcontainer{
