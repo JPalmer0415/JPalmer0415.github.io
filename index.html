@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+header{
+    color: white;
+    text-align: center;
+}
+
 body{
     background-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -95,6 +100,11 @@ a{
     border-radius: 6px;
 }
 
+.content img{
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 600px){
     .timeline::after{
         left: 31px;
@@ -127,13 +137,23 @@ a{
 
 <title>UI Evolution</title>
 
+<header>
+<p>This timeline showcases the evolution of website UI design from 1991 to 2024. It also contains a prediction for how website UI designs will look
+in the future.</p>
+<p>The pages of the website are for a fictional web design company named Nonexistent Gambits.</p>
+<p>Each page is an example of a main page. Click on (or hover over where applicable) the "Help" links on each page for an explanation on the
+    principles behind the page's design.</p>
+<p>Click a year on the timeline to visit its page.</p>
+</header>
+
 <body>
     <div class="timeline">
         <a href="1991.html">
         <div class="container left">
           <div class="content">
             <h2>1991</h2>
-            <p></p>
+            <p>18 tags and no images</p>
+            <p><img src="indexAssets/91screen.png"></p>
           </div>
         </div>
         </a>
@@ -141,7 +161,8 @@ a{
         <div class="container right">
           <div class="content">
             <h2>1994</h2>
-            <p> </p>
+            <p>Images and tables now possible</p>
+            <p><img src="indexAssets/94screen.png"></p>
           </div>
         </div>
         </a>
@@ -149,7 +170,8 @@ a{
         <div class="container left">
             <div class="content">
               <h2>1997</h2>
-              <p> </p>
+              <p>(Pending overhaul) Tables now used to create the entire layout</p>
+              <p><img src="indexAssets/97screen.png"></p>
             </div>
           </div>
         </a>
@@ -157,7 +179,8 @@ a{
         <div class="container right">
             <div class="content">
               <h2>1999</h2>
-              <p> </p>
+              <p>(Pending overhaul)Layout still table-based</p>
+              <p><img src="indexAssets/99screen.png"></p>
             </div>
         </div>
         </a>
@@ -165,7 +188,8 @@ a{
         <div class="container left">
             <div class="content">
                <h2>2004</h2>
-               <p> </p>
+               <p>Last of table-based layouts</p>
+               <p><img src="indexAssets/04screen.png"></p>
             </div>
         </div>
         </a>
@@ -173,7 +197,8 @@ a{
         <div class="container right">
             <div class="content">
                 <h2>2007</h2>
-                <p> </p>
+                <p>Not much change from '04 despite innovations. Beginning of &lt;div&gt;-based layouts</p>
+                <p><img src="indexAssets/07screen.png"></p>
             </div>
         </div>
         </a>
@@ -181,7 +206,8 @@ a{
         <div class="container left">
             <div class="content">
                 <h2>2009</h2>
-                <p> </p>
+                <p>Some sites embedded Flash videos. An mp4 is used instead since Flash has been deprecated from browsers. Flat design begins</p>
+                <p><img src="indexAssets/09screen.png"></p>
             </div>
         </div>
         </a>
@@ -189,7 +215,8 @@ a{
         <div class="container right">
             <div class="content">
                 <h2>2012</h2>
-                <p> </p>
+                <p>Responsive design on cutting edge. Videos gone from main page to respect data caps.</p>
+                <p><img src="indexAssets/12screen.png"></p>
             </div>
         </div>
         </a>
@@ -197,7 +224,8 @@ a{
         <div class="container left">
             <div class="content">
                 <h2>2014</h2>
-                <p> </p>
+                <p>Responsive design more popular. Layouts are split into columns.</p>
+                <p><img src="indexAssets/14screen.png"></p>
             </div>
         </div>
         </a>
@@ -205,7 +233,8 @@ a{
         <div class="container right">
             <div class="content">
                 <h2>2024</h2>
-                <p> </p>
+                <p>Responsive design is the de-facto standard. Flash is gone. Flat icons replace text. Slideshows are common on main pages.</p>
+                <p><img src="indexAssets/24screen.png"></p>
             </div>
         </div>
         </a>
@@ -213,7 +242,8 @@ a{
        <div class="container left">
             <div class="content">
                 <h2>The Future</h2>
-                <p> </p>
+                <p>Skeuomorphism makes a comeback. Kinetic typohraphy will become more common. Responsive design stays. New AI functionality.</p>
+                <p><img src="indexAssets/futurescreen.png"></p>
             </div>
         </div>
         </a>
