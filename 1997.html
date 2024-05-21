@@ -1,128 +1,89 @@
-<!--TODO: Make icons and banner-->
 <!DOCTYPE html>
 <html>
+    <title>Nonexistent Gambits</title>
 
-<title>Nonexistent Gambits</title>
-
-<!--CSS exists now-->
-<style>
-    header {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: x-large;
-        text-align: center;
-    }
-
-    body {
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    table, td{
-        border: 1px solid black;
-        /*border-collapse prevents double borders*/
-        border-collapse: collapse;
-        vertical-align: top;
-    }
-
-    .boxModel{
-        background-color: #bfbfbf;
-        width: 150px;
-        height: 650px;
-        float: left;
-        text-align: center;
-        font-size: large;
-    }
-
-    /*the <center> tag is deprecated in HTML 5, so this will have to do*/
-    .center{
-        text-align: center;
-    }
-    
-    .iconPlacement{
-        /*correctly align image*/
-        vertical-align: top;
-        display: inline-block;
-        text-align: center;
-        /*image margins*/
-        width: 150px;
-    }
-
-    .captionPlacement{
-        display: block;
-    }
-
-    .newsSize{
-        font-size: 20px;
-    }
-</style>
-
-<!--Divs have been introduced-->
-<div class = "boxModel">
-    <a href="#">Products</a> <br> <br>
-    <a href="#">About Us</a> <br> <br>
-    <a href="#">Contact Us</a> <br> <br>
-    <a href="Explanation1997.html">Help</a>
-</div>
-
-<header style="background-color: purple;">
-    <h1><img src = "NeG Logo.jpg" width="40" height="40">Welcome to Nonexistent Gambits</h1>
-</header>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
 
 <body>
+    <!--more accurate layout-->
+    <table style="border-spacing: 0;">
+        
+        <!--row 1-->
+        <tr>
+            <!--left navigation; despite this the first row's left column only contains the company logo-->
+            <td width="95" style="background-color: #bfbfbf; padding: 10px 0 0 36px;">
+                <img src="NeG Logo.jpg" width="80" height="80">
+            </td>
+            
+            <!--content-->
+            <td width="1215" style="background-color: #bfbfbf;">
+                <h1 style="text-align: center;">Welcome to Nonexistent Gambits</h1>
+            </td>
+        </tr>
 
-<!--<br> was introduced-->
+        <!--row 2-->
+        <tr>
+            <!--left navigation-->
+            <td width="150" height="484" style="background-color: #bfbfbf; padding-top: 40px; text-align: center; vertical-align: top;">
+                <!--neither apple nor macromedia's links resembled default, but Jakob Nielsen, the guy that literally wrote the book on
+                web design said that they should-->
+                <a href="#">Products</a><br><br>
+                <a href="#">About Us</a><br><br>
+                <a href="#">Contact Us</a><br><br>
+                <a href="Explanation1997.html">Help</a><br><br>
+            </td>
+            
+            <!--content-->
+            <td width="1100">
+                <p><h2 style="text-align: center;">Notice anything? No? Good.</h2></p><br>
+                <p style="text-align: center;"><a href="#"><img src="ProductsIcon1997.png" width="50" height="50"></a> &emsp;&emsp;&emsp;&emsp;
+                     <a href="#"><img src="missiridia-Universal-information-symbol1997.png" width="50" height="50"></a> &emsp;&emsp;&emsp;&emsp;
+                     <a href="#"><img src="email-alt-svgrepo-com.png" width="50" height="50"></a> &emsp;&emsp;&emsp;&emsp;
+                     <a href="Explanation1997.html"><img src="plus-mini-1523-svgrepo-com.png" width="50" height="50"></a>
+                </p>
+                <p style="padding-left: 395px;">
+                    <a href="#">Products</a> &emsp;&emsp;&emsp;&ensp;
+                    <a href="#">About Us</a> &emsp;&emsp;&emsp;
+                    <a href="#">Contact Us</a> &emsp;&emsp;&emsp;&emsp;
+                    <a href="Explanation1997.html">Help</a>
+                </p>
+                <br>
+                <hr>
 
-<div class="center"><img src = "Banner1997.png" width = "600" height = "130"><br></div>
-<!--center the icons-->
-<div class="center">
-<div class="iconPlacement">
-<img src = "ProductsIcon1997.png" width="50" height="50">
-<span class="captionPlacement"><a href="#">Products</a></span></div>
-<div class="iconPlacement">
-<img src = "missiridia-Universal-information-symbol1997.png" width="50" height="50">
-<span class="captionPlacement"><a href="#">About Us</a></span></div>
-<div class="iconPlacement"> 
-<img src = "email-alt-svgrepo-com.png" width="50" height="50">
-<span class="captionPlacement"><a href="#">Contact Us</a></span></div>
-<div class="iconPlacement"> 
-<img src = "plus-mini-1523-svgrepo-com.png" width="50" height="50"><br>
-<span class="captionPlacement"><a href="Explanation1997.html">Help</a></span></div>
-</div>
-
-<hr style="width: 87%;">
-<br>
-
-<div class="newsSize">&ensp; News</div><br>
-
-<table style="width:80%">
-    <tr>
-        <td><h4>New Book</h4>"This is Good Design: Dude, Trust Me" is YOUR souce for ALL things (Web design).</td>
-        <td><h4>New CD Rom</h4>Interactive tutorials that teach you to create websites.</td>
-    </tr>
-    <tr>
-        <td><h4>Exclusive Interviews</h4>"Wow, an ad! Time to go back outside." -User <br>
-        "&lt;blink&gt;" -Chimp on a typewriter<br>
-        "This URL makes no sense at all!" -An Expert</td>
-        <td><h4>Upcoming Web Design Trends</h4>
-        <ul>
-            <li>Site maps</li>
-            <li>Search bars</li>
-            <li>Table-based layouts</li>
-        </ul></td>
-    </tr>
-</table>
-
-<br><br>
-<!--horizontal rule tag draws a slightly faded line-->
-<hr style="width:60%">
-<br>
-
-<footer>
-    <div class = "center">
-        <a href="#">[Products]</a> &nbsp; <a href="#">[About Us]</a> &nbsp; <a href="#">[Contact Us]</a> &nbsp; <a href="Explanation1997.html">
-        [Help]</a><br> <a href="index.html">[Back to the present day]</a>
-    </div>
-</footer>
-
+                <p><h3>News</h3></p>
+                <p>
+                <!--actually using a table to display tabular data-->
+                <table>
+                    <tr>
+                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; padding-right: 70px; width: 590px;"><h4>New Book</h4>"This is Good Design: Dude, Trust Me" is YOUR souce for ALL things (Web design).</td>
+                        <td style="border-bottom: 1px solid black; width: 700px;"><h4>New CD Rom</h4>Interactive tutorials that teach you to create websites.</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid black; border-bottom: 1px solid black;"><h4>Exclusive Interviews</h4>"Wow, an ad! Time to go back outside." -User <br>
+                        "&lt;blink&gt;" -Chimp on a typewriter<br>
+                        "This URL makes no sense at all!" -An Expert</td>
+                        <td style="border-bottom: 1px solid black;"><h4>Upcoming Web Design Trends</h4>
+                        <ul>
+                            <li>Site maps</li>
+                            <li>Search bars</li>
+                            <li>Table-based layouts</li>
+                        </ul></td>
+                    </tr>
+                </table>
+                </p>
+                <br>
+                <hr style="width: 700px; margin: auto;">
+                <footer style="text-align: center;">
+                    <a href="#">[Products]</a> &nbsp; <a href="#">[About Us]</a> &nbsp; <a href="#">[Contact Us]</a> &nbsp; <a href="Explanation1997.html">
+                        [Help]</a><br> <a href="index.html">[Back to the present day]</a>
+                </footer>
+            </td>
+        </tr>
+    </table>
 </body>
-
 </html>
