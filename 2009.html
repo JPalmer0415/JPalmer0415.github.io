@@ -122,11 +122,15 @@ li a.shortcuts{
 .headlines{
     float: left;
     margin: 5px;
-    width: 24%;
+    width: 324px;
     background-color: rgb(191, 191, 191);
     border: 1px solid black;
     border-spacing: 10px;
     text-align: center;
+}
+
+.headlinesSection{
+    width: 1365px;
 }
 
 .headlinesSection::after{
@@ -146,6 +150,7 @@ footer{
     margin-left: 9px;
     margin-right: 10px;
     padding: 5px;
+    width: 1321px;
 }
 
 footer a:link{
@@ -155,6 +160,19 @@ footer a:link{
 footer a:hover{
     text-decoration: underline;
 }
+
+.headcontainer{
+    width: 1345px;
+}
+
+.navcontainer{
+    width: 1341px;
+}
+
+.shortcutcontainer{
+    width: 1350px;
+}
+
 </style>
 
 <html>
@@ -163,6 +181,7 @@ footer a:hover{
 Nonexistent Gambits
 </title>
 
+<div class="headcontainer">
 <header><img class="logo" src="2009Assets/2009logo.png" width="50" height="50">
 <!--Mini Menu-->
     <div class="options">
@@ -170,10 +189,11 @@ Nonexistent Gambits
     <a href="#">Sign In</a> | <a href="#">Product Registration</a> <input type="text" placeholder="search">
     </div>
 </header>
+</div>
 
 <body>
 <!--Navigation Bar-->
-<div>
+<div class="navcontainer">
 <br><br>
 <ul>
     <li><a class="navBar" href="2009.html">Home</a></li>
@@ -204,7 +224,7 @@ Nonexistent Gambits
     </div>
 </div>
 
-<div>
+<div class="shortcutcontainer">
 <ul class="shortcuts">
     <li><a class="shortcuts" href="#">Product Demos</a></li>
     <li><a class="shortcuts" href="#">Tutorials</a></li>
