@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<!--Put a corkboard behind columns-->
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #dadada;
+        overflow-x: hidden;
+    }
+
+    table{
+        width: 100%;
+        height: 100%;
+        /*the old cellpadding and cellspacing of HTML is deprecated, this is cleaner anyway*/
+        padding: 10;
+        border-spacing: 20px 5px; 
+        /*keeping the borders visible helps when creating the page*/
+        border: 0;
+    }
+
+    a:link{
+        color:black;
+    }
+
+    a:visited{
+        color:black;
+    }
+
+    a:link {
+    text-decoration: none;
+    }
+
+    a:visited {
+    text-decoration: none;
+    }
+
+    .navBarGradient{
+        background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(148,148,148,1) 50%, rgba(205,205,205,1) 100%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .column{
+        background-color: white;
+        vertical-align: top;
+        color: black;
+        font-size: small;
+        border-radius: 5%;
+        border: solid gray 1px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-image: url("2004Assets/paper-1959384_1920.jpg");
+    }
+
+    .left{
+        width:20%;
+        text-align: center;
+    }
+
+    .right{
+        width: 40%;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    .middle{
+        width:40%;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    .foot{
+        font-size: x-small;
+        text-align: center;
+    }
+
+    button{
+        border: solid black 1px;
+        border-radius: 12px;
+        color:white;
+        padding: 5px;
+        font-size: 12px;
+        background: linear-gradient(0deg, rgba(225,225,225,1) 0%, rgba(190,76,195,1) 50%, rgba(225,225,225,1) 100%);
+    }
+
+    .cork{
+        background-image: url('2004Assets/cork-board.jpg');
+        background-position: 50% 95%;
+        background-size: 1327px 275px;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<head>
+
+<title>Nonexistent Gambits</title>
+
+</head>
+
+<body>
+    
+<table width="1365px" class="cork" style="background-color:#dadada;">
+<!--Header Section with company title and options-->
+<tr>
+<td>Nonexistent Gambits</td>
+<td colspan="2" style="text-align: right; font-size: small;"><a href="#">Sign In</a> &ensp; | &ensp; <a href="#">Sign Up</a> &ensp; | &ensp; <a href="Explanation2007.html">Help</a></td>        
+</tr>
+
+<!--Navigation Bar-->
+<tr>
+    <td colspan="3" height="50px" style="border-radius: 15px; text-align: center; font-size: medium;" class="navBarGradient">
+    <a href="2007.html">Home</a> &ensp; | &ensp; <a href="#">Products</a> &ensp; | &ensp; <a href="#">Downloads</a> &ensp; | &ensp; 
+    <a href="#">Store</a> &ensp; | &ensp; <a href="#">About Us</a> &ensp; | &ensp; <a href="#">Contact Us</a> &ensp; | &ensp; <a href="Explanation2007.html">Help</a>
+</td>
+</tr>
+
+<!--Search Bar-->
+<tr>
+    <td colspan="3" style="text-align: center;">
+        <input type="text" style="width: 60%;"> <button type="button">Search</button>
+    </td>
+</tr>
+
+<!--Banner-->
+<tr>
+    <!--colspan helps images behave with other cells-->
+    <td colspan="3" style="text-align: center;"><img src="2007Assets/07banner.png" width="1320px" height="200px" style="border-radius: 10%;"></img></td>
+</tr>
+
+<!--Left Column-->
+<tr>
+<td class="column left"> <div style="text-align: left; padding-left: 15px; padding-top: 5px;">Shortcuts</div><hr>
+<a href="#" style="color: blue;">Free Trials</a><br><br>
+<a href="#" style="color: blue;">Product Demos</a><br><br>
+<a href="#" style="color: blue;">Smartphone?</a><br><br>
+<a href="#" style="color: blue;">Design Tutorials</a><br><br>
+<a href="#" style="color: blue;">Articles</a><br><br>
+<a href="#" style="color: blue;">Free Tips and Tricks</a><br><br>
+<a href="#" style="color: blue;">Site Deployment Tutorial</a><br><br>
+<a href="#" style="color: blue;">Reviews</a><br></td>
+
+<!--Middle Column-->
+<td class="column middle">Products<hr>
+<ul>
+    <li><a href="#" style="color: blue;">Books</a>
+        <ul>
+            <li>Our books cover a variety of topics such as the principles behind web design, common CSS layouts, and even general programming
+                for Javascript.
+            </li>
+        </ul>
+    </li>
+    <li><a href="#" style="color: blue;">Gambit</a>
+        <ul>
+            <li>Create your own websites using Gambit, our IDE.</li><br>
+        </ul>
+    </li>
+    <li><a href="#" style="color: blue;">Latest Software Versions</a>
+        <ul>
+            <li>All of the latest versions of our software.</li><br>
+        </ul>
+    </li>
+    <li><a href="#" style="color: blue;">Gambit Suite</a>
+        <ul>
+            <li>Download our navigator for convenient access to all of our software.</li><br>
+        </ul>
+    </li>
+</ul></td>
+
+<!--Right Column-->
+<td class="column right">News Headlines<hr>
+    <ul>
+        <li>09 April - Scheduled Maintenance</li><br>
+        <li>30 March - New Article: Mobile Design: What to Expect</li><br>
+        <li>15 February - Scheduled Maintenance</li><br>
+        <li>09 January - Does this change everything?</li><br>
+        <li><a href="#" style="color: blue;">News Archives</a></li>
+    </ul></td>
+</tr>
+
+<!--Footer-->
+<tr class="foot">
+    <td colspan="3"><a href="#">About Us</a> &ensp; | &ensp; <a href="#">Contact Us</a> &ensp; | &ensp; <a href="#">Privacy Policy &ensp; | &ensp; </a>
+    <a href="#">Accessibility</a> &ensp; | &ensp; <a href="#">Report Piracy</a> &ensp; | &ensp; <a href="#">Send Feedback</a> &ensp; | &ensp; <a href="index.html">Back to the Present Day</a></td>
+</tr>
+</table>
+
+</body>
+
+</html>
