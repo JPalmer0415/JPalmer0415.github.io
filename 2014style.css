@@ -103,7 +103,7 @@ html{
     align-items: center;
 }
 
-.navbar a:hover{
+.navbar a:hover:not(.nohighlight){
     color:white;
     background-color: black;
 }
